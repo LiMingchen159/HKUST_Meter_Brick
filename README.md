@@ -74,5 +74,5 @@ Contributions to improve the scripts and documentation are welcome. Please fork 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact 
-For any inquiries or issues, please contact [Professor Zhe (Walter) Wang](https://walterzwang.github.io/) or [Mingchen Li](https://limingchen159.github.io/).
+For any inquiries or issues, please contact Professor [Zhe (Walter) Wang](https://walterzwang.github.io/) or PhD student [Mingchen Li](https://limingchen159.github.io/).
 
