@@ -9,6 +9,12 @@ This repository contains scripts for analyzing and processing electricity consum
 ```
 ├── Data_Preprocessing
 │ └── Data_Resampling.py
+├── Dorm_Room_Analysis
+│ ├── Dorm_Room_Analysis.py
+│ └── Seasonal_Plot.py
+├── Evaluation
+│ ├── Data_Calculation.py
+│ └── Relative Error.py
 ├── Lighting_Analysis
 │ ├── Lighting_Analysis.py
 │ └── Lighting_Plot.py
@@ -18,10 +24,10 @@ This repository contains scripts for analyzing and processing electricity consum
 │ ├── Missing_Rate_Building_Hour_Plot.py
 │ ├── Missing_Rate_Sampling_Times.py
 │ └── Missing_Rate_Sampling_Times_Plot.py
-└── Query_Example
-├── Building_Query.py
-├── Equipment_Query.py
-└── Zone_Query.py
+├── Query_Example
+│ ├── Building_Query.py
+│ ├── Equipment_Query.py
+│ └── Zone_Query.py
 ```
 
 
@@ -29,11 +35,20 @@ This repository contains scripts for analyzing and processing electricity consum
 
 - **Data_Resampling.py**: This script is designed to process raw electricity consumption data by resampling it into consistent intervals.
 
+### Dorm Room Analysis
+
+- **Dorm_Room_Analysis.py**: This script loads and interpolates meter data for bedrooms and toilets on the 1F floor of GGT student hall. It queries the RDF graph for associated meters, processes the data, and calculates power consumption. The cleaned data is saved to a CSV file.
+- **Seasonal_Plot.py**: This script visualizes the hourly power distribution for bedrooms and toilets over different seasons. It generates a line plot showing average kW for each hour, categorized by season, and saves the plot as a PNG file.
+
 ### Lighting Analysis
 
 - **Lighting_Analysis.py**: This script performs analysis on lighting data. It includes functions to load data from Excel files, process it, and analyze lighting patterns in different floors of the academic buildings.
-
 - **Lighting_Plot.py**: This script generates plots for visualizing the results of the lighting analysis. It uses Matplotlib to create visual representations of the lighting data over specified periods.
+
+### Evaluation
+
+- **Data_Calculation.py**: This script processes data for each zone, calculating total and sub-meter energy consumption. It handles missing meters and outputs the results to CSV files.
+- **Relative Error.py**: This script calculates the Mean Absolute Error (MAE) percentage between total and sub-metered energy consumption, filtering out outliers using the IQR method.
 
 ### Missing Rate
 
@@ -62,7 +77,7 @@ This repository contains scripts for analyzing and processing electricity consum
 Ensure you have the required Python packages installed. You can install them using the following command:
 
 ```
-pip install pandas rdflib matplotlib tqdm seaborn
+pip install pandas rdflib matplotlib tqdm seaborn sklearn
 ```
 
 ## Contributions 
