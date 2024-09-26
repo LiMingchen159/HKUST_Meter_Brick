@@ -77,7 +77,7 @@ This repository contains scripts for analyzing and processing electricity consum
 Ensure you have the required Python packages installed. You can install them using the following command:
 
 ```
-pip install pandas rdflib matplotlib tqdm seaborn sklearn
+pip install pandas rdflib matplotlib tqdm seaborn scikit-learn
 ```
 
 ## Contributions 
